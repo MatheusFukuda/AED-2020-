@@ -23,7 +23,7 @@ agenda *aponta;
 agenda *apontaaux;
 
 int main (){
-    pbuffer = malloc(sizeof(var));
+    pbuffer = (void*)malloc(sizeof(var));
     if(pbuffer == NULL){
         printf("\nERRO\n");
         free(pbuffer);
@@ -33,6 +33,7 @@ int main (){
     aux->Npessoas = 0;
     aux->i = 0;
     aux->j = 0;
+    aponta = pbuffer;
 
 
     while(aux->op != 5){
