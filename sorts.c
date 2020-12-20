@@ -153,7 +153,7 @@ void merge(int *v, int l, int m, int r){
     int i, j, k;
     int n1 = m + l + 1;
     int n2 = r - m;
-    int L[n1], R[n2];
+    int L[n1], R[n2]; //GCC WINDOWS ARRAY PROBLEM
 
 
     for(i = 0; i < n1; i++)
